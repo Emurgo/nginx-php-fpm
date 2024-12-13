@@ -9,7 +9,7 @@ on:
         default: 'latest' 
         type: string
 env:
-  BUILDKIT_IMAGE: jkaninda/nginx-php-fpm
+  BUILDKIT_IMAGE: emurgornd/nginx-php-fpm
 jobs:
   docker:
     runs-on: ubuntu-latest

@@ -54,7 +54,7 @@ RUN docker-php-ext-enable rdkafka \
 
 # Install PHP extensions zip, mbstring, exif, bcmath, intl
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
-RUN docker-php-ext-install  zip mbstring exif pcntl bcmath -j$(nproc) gd intl
+RUN docker-php-ext-install  zip mbstring exif pcntl bcmath -j$(nproc) gd intl mysqli
 
 # Install Redis and enable it
 RUN pecl install redis  && docker-php-ext-enable redis

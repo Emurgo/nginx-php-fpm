@@ -25,7 +25,7 @@ jobs:
           push: true
           tags: emurgornd/wordpress:latest,emurgornd/wordpress:${{ github.ref_name }}
           file: "./src/docker/Dockerfile"
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           build-args: |
             phpVersion=8.4
 
